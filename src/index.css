@@ -1,3 +1,123 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;1,200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "poppins";
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 6vh;
+    border: 7px dashed rgb(1,17,180);
+    border-radius: 20px;
+    padding: 1vh 5vw;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 400px;
+    height: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.24);
+}
+
+.image {
+    width: 380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tour-info {
+    margin: 20px 5px;
+}
+
+.tour-price {
+    font-size: 1.3rem;
+    color: #1faa59;
+}
+
+.tour-name {
+    font-size: 1.5rem;
+    font-weight:900;
+}
+
+.read-more {
+    cursor: pointer;
+    color: #12b0e8;
+}
+
+.btn-red {
+    margin-top:18px ;
+    font-size: 18px;
+    border:1px solid #b4161b;
+    background-color: #b4161b21;
+    padding: 10px 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.btn-red:hover {
+    background-color: red;
+    color: white;
+}
+
+.refresh {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.refresh h2 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.btn-white {
+    cursor: pointer;
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid white;
+    background-color: #524a4a21;
+    border-radius: 40px;
+}
+
+.btn-white:hover {
+    background-color: white;
+    color: black;
+    transition: all linear 0.2s;
+}
